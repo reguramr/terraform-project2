@@ -152,6 +152,7 @@ resource "aws_instance" "private-ec2" {
   tags = {
     Name = "Private-vgs"
     Name = "Private-ec2"
+    Team = "PROD"
   }
 }
 
