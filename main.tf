@@ -139,6 +139,7 @@ resource "aws_instance" "public-ec2" {
   tags = {
     Name = "Public-vgs"
     Team = "DEV"
+    Name = "Public-ec2"
   }
 }
 
