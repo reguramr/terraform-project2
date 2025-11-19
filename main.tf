@@ -138,6 +138,7 @@ resource "aws_instance" "public-ec2" {
   vpc_security_group_ids = [aws_security_group.pub-sg.id]
   tags = {
     Name = "Public-vgs"
+    Team = "DEV"
   }
 }
 
@@ -150,6 +151,7 @@ resource "aws_instance" "private-ec2" {
   vpc_security_group_ids = [aws_security_group.pvt-sg.id]
   tags = {
     Name = "Private-vgs"
+    Name = "Private-ec2"
   }
 }
 
